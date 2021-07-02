@@ -1,0 +1,80 @@
+$maincolor: #0880e8;
+
+.navbar {
+  background-color: $maincolor;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.backgound {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  color: $maincolor;
+  margin: auto;
+  font-weight: bolder;
+  font-size: xx-large;
+  position: relative;
+  text-align: center;
+}
+.lorem {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .card {
+    width: 24%;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+
+    span {
+      font-size: small;
+      font-weight: lighter;
+    }
+
+    .title {
+      width: 100%;
+      height: 90px;
+      background-color: lightblue;
+    }
+    .advanced {
+      position: absolute;
+      top: 20px;
+      width: 100px;
+      height: 30px;
+      background-color: $maincolor;
+      text-align: center;
+      transform: rotate(45deg);
+      overflow: hidden;
+      right: -10px;
+
+      margin: -5px;
+    }
+    .price {
+      margin-top: 50px;
+      font-weight: bolder;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+    del {
+      text-align: center;
+    }
+    .btn {
+      align-items: center;
+      border-radius: 30px;
+      width: 200px;
+      padding: 10px 10px 10px 10px;
+      margin: auto;
+    }
+  }
+}
