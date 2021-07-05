@@ -44,6 +44,13 @@ h2 {
   position: relative;
 }
 
+.wrapper .card .title1 {
+  background-color: #0880e8;
+  width: 100%;
+  height: 90px;
+  border-radius: 5px 5px 0px 0px;
+}
+
 .wrapper .card span {
   font-size: small;
   font-weight: lighter;
@@ -52,10 +59,12 @@ h2 {
 .wrapper .card .title {
   width: 100%;
   height: 90px;
-  background-color: lightblue;
+  background-color: lightgray;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
 }
 
-.wrapper .card .advanced {
+.wrapper .advanced {
   position: absolute;
   top: 20px;
   width: 100px;
@@ -69,21 +78,21 @@ h2 {
   margin: -5px;
 }
 
-.wrapper .card .price {
+.wrapper .price {
   margin-top: 50px;
   font-weight: bolder;
 }
 
-.wrapper .card p {
+.wrapper p {
   text-align: center;
   margin-top: 10px;
 }
 
-.wrapper .card del {
+.wrapper del {
   text-align: center;
 }
 
-.wrapper .card .btn {
+.wrapper .btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -91,5 +100,42 @@ h2 {
   width: 200px;
   padding: 10px 10px 10px 10px;
   margin: auto;
+}
+
+@media only screen and (max-width: 1050px) {
+  .navbar {
+    width: 700px;
+    background-color: chartreuse;
+  }
+}
+
+.backgound {
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .navbar {
+    width: 500px;
+  }
+  .backgound {
+    width: 100%;
+  }
+  .wrapper {
+    width: 500px;
+  }
+  .card {
+    width: 22%;
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    width: 300px;
+  }
+  .card {
+    width: 22%;
+    height: 250px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
